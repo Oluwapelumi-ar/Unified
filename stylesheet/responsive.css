@@ -1,0 +1,128 @@
+@media screen and (min-width: 1000px) {
+
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: static;
+    }
+
+    nav ul{
+        display: flex;
+        align-content:space-around;
+        max-height: 70px;
+    }
+
+    li {
+        font-family: var(--mainFont);
+        font-size: 22px;
+        padding:19px;
+    }
+
+    .hide-list {
+        display: none;
+    }
+
+    .icon-foo {
+        display: none;
+    }
+
+    
+    header nav ul li a {
+        color: var(--main);
+    }
+    
+    header nav ul li button {
+        border: 2px solid var(--pryColor);
+        border-radius: 30px;
+        padding:15px 30px;
+        color: var(--pryColor);
+        margin-top: -190px;
+        font-size: 1.2rem;
+        background-color: #FFFFFF;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .banner {
+        margin-top: 40px;
+    }
+    
+    .banner-img {
+        display: block;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        grid-template-rows: 340px;
+    }
+
+    .about-img {
+        display:block;
+    }
+
+    .steps .image {
+        display: block;
+    }
+
+    input[type="submit"] {
+        margin-left:  -22rem; 
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+
+@media screen and (min-width:1000px) and (max-width:1300px) {
+
+
+    li {
+        padding:7px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .nav {
+        max-height: 0;
+        height: 400vh;
+        position: absolute;
+        top:100px;
+        right:0;
+        left:0;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(137, 223, 137);
+        opacity: 0.9;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+    } 
+
+    nav ul {
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .nav li a{
+        font-size: 24px;
+        color:yellow;
+    }
+
+    nav li button {
+        display: none;
+    }
+
+    .footer-nav nav{
+        display: block;
+    }
+    
+
+}

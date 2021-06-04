@@ -1,0 +1,500 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+/* General style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utilities */
+
+:root {
+    --main:#1FCF6E;
+    --pryColor:#1F28CF;
+    --textColor:#4B4F51;
+    --mainFont: 'Montserrat', sans-serif;
+    --pryFont: 'Red Hat Display', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3 {
+    color:var(--main)
+}
+
+p {
+    color: var(--textColor);
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: minmax(1fr, 500px);
+    grid-auto-rows: minmax(500px, auto);
+    gap: 20px;
+}
+
+.content-header {
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-header p {
+    font-size: 25px;
+    color: #1F28CF;
+}
+
+.content-header h4 {
+    font-size: 20px;
+    color: #1FCF6E
+}
+
+.content-header h6 {
+    font-size: 20px;
+    color:#4B4F51;
+}
+
+.content-header h3 {
+    font-size:2rem;
+}
+/*  Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0px;
+    bottom: 600px ;
+    right: 0;
+    left:0;
+    padding-top: 40px;
+}
+
+.btn-text {
+    color: var(--pryColor);
+}
+
+.icon {
+    display: flex;
+}
+
+.icon-foo:after {
+    content: "\f0c9"; 
+    font-family: 'Font Awesome 5 Pro';
+    font-style: normal;
+    font-weight: 900; 
+    font-size: 2rem;
+}
+
+.activ:after {
+    content: '\f00d';
+    font-family: 'Font Awesome 5 Pro';
+    font-style: normal;
+    font-weight: 900; 
+    font-size: 2rem;
+}
+/*  Banner */
+
+.banner {
+    margin-top: 140px;
+}
+
+
+.banner-text {
+    padding-top: 50px;
+}
+
+.banner-img {
+    display: none;
+}
+
+.learning-paths h3, .about-text h3,.banner-text h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 130%;
+    color: #128E5A;
+    padding-bottom: 30px;
+}
+
+
+.about-text p,.banner-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 190%;
+    color: #4B4F51;
+    padding-bottom: 30px;
+}
+
+
+.bold-text {
+    color:#333;
+}
+
+.about-btn,.banner-text button {
+    padding:20px 70px;
+    background: #1F28CF;
+    color:#fff;
+    box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;  
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: capitalize;  
+}
+
+time {
+    display: flex;
+}
+.time-box {
+    min-width: 20%;
+    max-width: 30%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    padding-right: 10px;
+}
+
+.time-count {
+    background: #F5F5F5;
+    padding: 20px;
+    color: black;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.15);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.time-count h3 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.script {
+    background: #F5F5F5;
+    padding: 10px;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.15);
+}
+
+/*  Application */
+
+.application {
+    background: #FFFCF6;
+    border: 1px solid #DDE3E9;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 50px;
+    font-family: Montserrat;
+}
+
+
+/*  Cards */
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, minmax(300px ,auto));
+    grid-row-gap: 20px;
+}
+
+.card-box {
+    width:100%;
+    padding-top:70px;
+    background: #FFFFFF;
+    /* box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11); */
+    /* height: 500px; */
+    border-bottom: 3px solid #DDE3E9;
+}
+
+.card-item {
+    font-family: Montserrat;
+    font-style: normal;
+    flex-basis: 28%;
+    padding:30px;
+    background: #FFFFFF;
+    box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+}
+
+.card-item h3 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 37px;
+    text-align: center;
+    color: #128E5A;
+    padding-bottom: 30px;
+}
+
+.card-item li {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    color: #4B4F51;
+    list-style-type: disc;
+}
+
+/*  About section */
+
+.about-text {
+    padding-top: 50px;
+}
+
+.about-img {
+    display: none;
+}
+
+.about-text h6 {
+font-family: 'Red Hat Display';
+font-size: 27px;
+font-style: normal;
+font-weight: 700;
+line-height: 60px;
+letter-spacing: 0em;
+text-align: left;
+color: #1F28CF
+}
+
+.learning-paths p,.about-text p { 
+    font-size: 17px;
+    line-height: 40px;
+    font-weight: 400;
+}
+.paths {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.path-item {
+    text-align: center;
+    height: 600px;
+    background: #fff;
+    box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    border-bottom: 9px solid #1F28CF;
+    padding: 5rem 0;
+    font-family: Montserrat;
+    font-style: normal;
+    margin-top: 100px;
+}
+
+.path-item h6 {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44px;
+    color:#1FCF6E;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.links {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 185%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* color: #4B4F51; */
+    text-decoration-line: underline;
+}
+
+/*  How it Works */
+.steps {
+    display: grid;
+    grid-template-columns: minmax(1fr, 500px);
+    grid-auto-rows: minmax(500px, auto);
+    gap: 20px;
+}
+
+.steps .image {
+    display: none;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+.details h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 43px;
+    line-height: 147%;
+    text-transform: capitalize;
+    color: #1FCF6E;
+}
+
+.details p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 44px;
+    color: #4B4F51;
+    text-align: start;
+}
+
+.number-img {
+    position: relative;
+    top:-60px;
+    right:-10px;
+}
+
+/*  FAQ */
+.faq {
+    width:50%;
+    min-height: 400px;
+    max-height: 1000px;
+    margin: 0 auto;
+    /* background-color: cornflowerblue; */
+}
+
+.title h6 {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    height:70px;
+}
+
+.title:after {
+    content: '\0208A';
+    float: right;
+    margin: -80px 0 0 5px;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.content p {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.title.active:after {
+    content: "\2715";
+    font-weight: 700;
+    font-size: 1.7rem;
+    padding-top: 15px;
+}
+
+.bars.activ:after {
+    content: "\2715";
+}
+
+
+/*  Contact Us */
+.form {
+    height: 400px;
+    width:70%;
+    margin: 0 auto;
+}
+
+.form {
+    text-align: center;
+    height: 500px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+form input,textarea {
+    width: 80%;
+    padding:15px 15px;
+    margin:5px;
+    opacity: 0.24;
+    border: 1px solid #030F25;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="submit"] {
+    width: 30%;
+    opacity: 0.9;
+    background: #1F28CF;
+    color: #fff;
+    margin-left:  -13rem; 
+    font-size: 1.2rem;
+}
+
+
+/*  Footer */
+
+footer {
+    height: 200px;
+    width:100%;
+}
+
+footer {
+    height:100px;
+}
+
+.footer-nav {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.footer-nav nav ul li a{
+    
+    color:var(--main)
+}
+
+.footer-nav nav ul li {
+    padding-bottom: 20px;
+    font-size: 22px;
+}
+
+.final-section {
+    padding: 10px;
+    background-color: #1F28CF;
+    text-align: center;
+}
+
+.final-section p {
+    color:#FFFCF6;
+}
