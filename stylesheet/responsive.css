@@ -69,6 +69,14 @@
         display: block;
     }
 
+    .faq {
+        width:50%;
+        min-height: 400px;
+        max-height: 1000px;
+        margin: 0 auto;
+    }
+    
+
     input[type="submit"] {
         margin-left:  -22rem; 
     }

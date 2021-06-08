@@ -116,6 +116,7 @@ header {
     font-weight: 900; 
     font-size: 2rem;
 }
+
 /*  Banner */
 
 .banner {
@@ -140,7 +141,6 @@ header {
     padding-bottom: 30px;
 }
 
-
 .about-text p,.banner-text p {
     font-family: 'Montserrat', sans-serif;
     font-family: Montserrat;
@@ -151,7 +151,6 @@ header {
     color: #4B4F51;
     padding-bottom: 30px;
 }
-
 
 .bold-text {
     color:#333;
@@ -174,6 +173,7 @@ header {
 time {
     display: flex;
 }
+
 .time-box {
     min-width: 20%;
     max-width: 30%;
@@ -216,6 +216,7 @@ time {
 
 
 /*  Cards */
+
 .cards {
     display: grid;
     grid-template-columns: 1fr;
@@ -226,9 +227,8 @@ time {
 .card-box {
     width:100%;
     padding-top:70px;
+    padding-bottom: 70px;
     background: #FFFFFF;
-    /* box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11); */
-    /* height: 500px; */
     border-bottom: 3px solid #DDE3E9;
 }
 
@@ -323,11 +323,11 @@ color: #1F28CF
     text-align: center;
     display: flex;
     flex-direction: column;
-    /* color: #4B4F51; */
     text-decoration-line: underline;
 }
 
 /*  How it Works */
+
 .steps {
     display: grid;
     grid-template-columns: minmax(1fr, 500px);
@@ -372,12 +372,12 @@ color: #1F28CF
 }
 
 /*  FAQ */
+
 .faq {
-    width:50%;
-    min-height: 400px;
+    width:80%;
+    min-height: 700px;
     max-height: 1000px;
     margin: 0 auto;
-    /* background-color: cornflowerblue; */
 }
 
 .title h6 {
@@ -388,7 +388,7 @@ color: #1F28CF
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
-    height:70px;
+    min-height:70px;
 }
 
 .title:after {
@@ -458,7 +458,6 @@ input[type="submit"] {
     opacity: 0.9;
     background: #1F28CF;
     color: #fff;
-    margin-left:  -13rem; 
     font-size: 1.2rem;
 }
 
@@ -466,12 +465,8 @@ input[type="submit"] {
 /*  Footer */
 
 footer {
-    height: 200px;
     width:100%;
-}
-
-footer {
-    height:100px;
+    height:80px;
 }
 
 .footer-nav {
@@ -480,7 +475,6 @@ footer {
 }
 
 .footer-nav nav ul li a{
-    
     color:var(--main)
 }
 
