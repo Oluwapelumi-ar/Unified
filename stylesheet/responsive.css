@@ -95,6 +95,7 @@
         padding:7px;
         font-size: 20px;
     }
+
 }
 
 @media screen and (max-width:1000px) {
@@ -126,6 +127,10 @@
 
     nav li button {
         display: none;
+    }
+
+    .card-item h3 {
+        padding-bottom: 30px;
     }
 
     .footer-nav nav{

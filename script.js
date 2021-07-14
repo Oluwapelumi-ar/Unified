@@ -29,7 +29,7 @@ const nav =  document.querySelector('.nav')
 
 //   Timer
 // Set the date we're counting down to
-const countDownDate = new Date("Jun 16, 2021 15:37:25").getTime();
+const countDownDate = new Date("Aug 16, 2021 15:37:25").getTime();
 
 // Update the count down every 1 second
 const x = setInterval(function () {
